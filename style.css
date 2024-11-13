@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Pour que ça rentre ds la boite*/
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.btn {
+    background-color: #B9625D;
+    padding: 16px 55px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+
+}
+
+/*HEADER*/
+
+header {
+    background-color: #B9625D;
+    padding: 0px 40px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1 ;
+    width: 100%;
+}
+
+header nav {
+    width: 40%;
+}
+
+header img {
+    width: 15%;
+}
+
+/*HERO*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Pour que l'image s'adapte au bloc*/
+}
+
+.hero div {
+    background-color: rgba(40, 40,40, 0.0314);
+    width: 50%;
+    position: absolute; /*POSITION ABSOLUTE QUI SORT DU FLUX MAIS LE HERO POSITION RELATIVE*/
+    top:50%;  /*Pour la centrer de haut*/
+    left:50%;  /*Pour la centrer de gauche*/
+    transform:translate(-50%, -50%);  /*Pour le mettre au centre de gravité*/
+    text-align: center;
+    padding: 100px 64px;
+    border-radius: 23px;   
+    backdrop-filter:blur(10px); /*Pour flouter le fond*/
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: white;
+}
+
+
+/*SECTION PHOTOS*/
+
+.globale h4 {
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    color: black;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+
+}
+.galerie {
+    width: 70%;
+}
+
+.service {
+    position: relative;   
+    width:372px;
+    height:326px;
+}
+
+.service img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.service  h2 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white;
+    transform: translate(-50%,-50%,);
+}
+
+/*.ASIDE*/
+
+.red {
+    width: 25%;
+    position: sticky;
+    margin-left:65px;
+}
+
+.red p {
+    font-size:18px;
+    width: 70%;
+      
+}
+
+a.Animations {
+    color:black;
+    font-size: 20px;
+}
+
+.Animations {
+    position: relative;  
+}
+
+
