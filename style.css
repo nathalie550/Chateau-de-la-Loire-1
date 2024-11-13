@@ -19,10 +19,10 @@ body {
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    color:white;
+a {  
     display: inline-block;
+    text-decoration: none;
+    color: white;
 }
 
 li {
@@ -37,8 +37,22 @@ li {
     background-color: #B9625D;
     padding: 16px 55px;
     border-radius: 15px;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
+}
 
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.sticky {
+    position: sticky;
+    top:80px;
+}
+
+.width35 {
+    width: 40px;
 }
 
 /*HEADER*/
@@ -51,6 +65,11 @@ header {
     left:0;
     z-index: 1 ;
     width: 100%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
 }
 
 header nav {
@@ -99,64 +118,133 @@ h1 {
     color: white;
 }
 
-
-/*SECTION PHOTOS*/
-
-.globale h4 {
+/*SECTION CONTAINER SERVICES */
+h3 {
+    margin-top:30px;
     font-size: 25px;
     font-weight: 700;
-    width: 100%;
-    color: black;
-    margin-top: 35px;
-    margin-bottom: 35px;
-
-
-}
-.galerie {
-    width: 70%;
+    text-align: center;
 }
 
-.service {
-    position: relative;   
-    width:372px;
-    height:326px;
+.containerServices div {   
+    width: 65%;  
+    gap:15px; 
+    margin-top:30px;  
 }
 
-.service img {
-    width: 100%;
-    height:100%;
+.containerServices img {
+    width: 372px;
+    height: 327px;
     object-fit: cover;
+    border-radius: 23px;
 }
 
-.service  h2 {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    color: white;
-    transform: translate(-50%,-50%,);
+.card {
+    position: relative;
+    display: block;   
 }
+    
+.card h2 {
+    position: absolute; /*POSITION ABSOLUTE QUI SORT DU FLUX MAIS LE HERO POSITION RELATIVE*/
+    top:50%;  /*Pour la centrer de haut*/
+    left:50%;  /*Pour la centrer de gauche*/
+    transform:translate(-50%, -50%);  /*Pour le mettre au centre de gravité*/
+    text-align: center;    }
+
+
+
 
 /*.ASIDE*/
-
-.red {
-    width: 25%;
-    position: sticky;
-    margin-left:65px;
+.containerServices aside {
+     width: 20%;   
+     background-color: #B9625D;  
 }
 
-.red p {
-    font-size:18px;
-    width: 70%;
-      
+.Art {
+    margin-top:30px;
 }
 
-a.Animations {
-    color:black;
+
+.Art li {
+    font-size: 17px;
+    font-weight: 400;   
+}
+
+.Art a {
+    color: black;
+}
+
+.Art p {
     font-size: 20px;
+    font-weight: 700;   
 }
 
-.Animations {
-    position: relative;  
+/*.PHOTO FILIGRANE*/
+.filigrane {
+    position: fixed;
+    top:192px;
+    left:0;
+    z-index: -1;
 }
 
 
+
+
+/*SECTION HISTOIRE DU CHATEAU*/
+.histoire {
+background-color: #B9625D;
+}
+
+.histoire h3 {
+    font-size: 30px;
+    font-weight: 700; 
+    margin-top:30px;  
+    color: white;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom:30px;
+}
+
+.histoire h4 {
+    font-size: 20px;
+    font-weight: 700;  
+    color: white;
+}
+
+.histoire p {
+    font-size: 20px;
+    font-weight: 400; 
+    color: white;
+}
+
+.histoire img {
+width: 481px;
+height: 320px;
+border-radius: 23px;
+object-fit: cover;
+margin-bottom:40px;
+}
+
+/*DERNIERE SECTION*/
+.autre {
+background-color: white;
+}
+
+.autre h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top:25px;
+    color: #B9625D;
+    padding-bottom:30px;
+}
+
+.two {
+    width: 40%;
+    padding-top:20px;
+  
+}
+
+.two p {  
+ margin-bottom:20px;
+  
+}
